@@ -1,0 +1,77 @@
+/* Fullscreen Background */
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6d5dfc, #6596fc, #53bffc, #37e5fc);
+  padding-top: 60px; /* Ensures space below navbar */
+}
+
+/* Login/Register Box */
+.login-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px; /* Reduced padding */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px; /* Reduced width */
+  min-height: 300px; /* Reduced height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 0; /* Centering adjustment */
+}
+
+/* Input Fields */
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.login-container input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Login Button */
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.login-container button:hover {
+  background: #0056b3;
+}
+
+/* Links */
+.login-container a {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-container {
+      width: 90%;
+      padding: 15px; /* Adjusted padding for smaller screens */
+  }
+}

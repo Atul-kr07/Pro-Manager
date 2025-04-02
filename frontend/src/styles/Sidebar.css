@@ -1,0 +1,193 @@
+/* Sidebar Container */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: white;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+/* Logo Section */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.logo-section img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.logo-section h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 1rem;
+  color: #666;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  background: rgba(0, 123, 255, 0.1);
+  color: #007bff;
+}
+
+.nav-link.active {
+  background: #007bff;
+  color: white;
+}
+
+.nav-link i {
+  font-size: 1.2rem;
+  width: 24px;
+  text-align: center;
+}
+
+/* View Profile Button */
+.view-profile {
+  margin-top: auto;
+  padding: 1rem;
+  background: rgba(0, 123, 255, 0.1);
+  border: none;
+  border-radius: 8px;
+  color: #007bff;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  transition: all 0.3s ease;
+  width: 100%;
+  justify-content: center;
+}
+
+.view-profile:hover {
+  background: rgba(0, 123, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.view-profile i {
+  font-size: 1.2rem;
+}
+
+/* Dark Mode Styles */
+.sidebar.dark {
+  background: #222;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar.dark .logo-section {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar.dark .logo-section h1 {
+  color: #fff;
+}
+
+.sidebar.dark .nav-link {
+  color: #bbb;
+}
+
+.sidebar.dark .nav-link:hover {
+  background: rgba(102, 179, 255, 0.1);
+  color: #66b3ff;
+}
+
+.sidebar.dark .nav-link.active {
+  background: #66b3ff;
+  color: white;
+}
+
+.sidebar.dark .view-profile {
+  background: rgba(102, 179, 255, 0.1);
+  color: #66b3ff;
+}
+
+.sidebar.dark .view-profile:hover {
+  background: rgba(102, 179, 255, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .view-profile {
+    margin-top: 1rem;
+  }
+}
+
+/* Scrollbar Styles */
+.nav-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.nav-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.nav-list::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 3px;
+}
+
+.nav-list::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+} 
