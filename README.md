@@ -43,7 +43,7 @@ A modern, responsive project management system built with React and Node.js, fea
 ### ✅ Prerequisites
 - **Node.js** (v14 or higher)
 - **MongoDB** (v4.4 or higher)
-- **npm** or **yarn** package manager
+- **npm** package manager
 
 ### 👅 Installation
 
