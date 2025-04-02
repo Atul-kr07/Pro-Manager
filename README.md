@@ -154,15 +154,6 @@ project-management-system/
 
 ---
 
-## 🤝 Contributing
-
-We welcome contributions! To contribute:
-1. Fork the repository.
-2. Create a new branch (`feature/your-feature` or `fix/your-bug`).
-3. Commit your changes and push the branch.
-4. Open a pull request.
-
----
 
 ## 🛠 Support & Troubleshooting
 
