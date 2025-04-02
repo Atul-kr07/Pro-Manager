@@ -30,7 +30,7 @@ A modern, responsive project management system built with React and Node.js, fea
 
 ### Backend
 - **Node.js** with Express.js
-- **MongoDB** with Mongoose ODM
+- **MongoDB**
 - **JWT** for secure authentication
 - **Express Middleware** for request handling
 - **Bcrypt** for password hashing
